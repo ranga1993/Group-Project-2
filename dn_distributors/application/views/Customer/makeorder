@@ -1,0 +1,89 @@
+<div class="container">
+        <div class="table-responsive" style="padding-left:100px">
+
+            <table class="table table-bordered" >
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Item ID </th>
+                    <th>Item Name </th>
+                    <th>Item Price </th>
+                    <th>Quantity</th>
+                    <th>Price*Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                        <?php
+                        /*            if($application->num_rows()>0){
+
+                                    foreach($application->result() as $rec){
+                                    */?>
+                        <!--<tr>
+                                <td> <?php /*echo $rec-> application_id ; */?> </td>
+                                <td> <?php /*echo $rec-> init_name ; */?> </td>
+                                <td> <?php /*echo $rec-> last_name ; */?> </td>
+                                <td> <?php /*echo $rec-> owner_nic ; */?> </td>
+                                <td> <?php /*echo $rec-> ward_no ; */?> </td>
+                                <br>
+                            </tr>-->
+                        <?php
+                            //}
+
+                            //}
+                            /*else{
+                        */?><!--
+                            <tr>
+                                <td> No Application Pending </td>
+                            </tr>
+
+                        --><?php
+                    /*                    }
+                                    */?>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+
+
+    <tr>
+                                <td> <?php echo $rec-> order_id ; ?> </td>
+                                <td> <?php echo $rec-> delivery_address ; ?> </td>
+                                <td> <?php echo $rec-> ordered_date ; ?> </td>
+                                <td> <div class="form-group">
+                                        <button type="button" class="form-control" data-toggle="modal" data-target="#myModal">view</button>
+
+                                        <div id="myModal" class="modal fade" role="dialog">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">Order Details</h4>
+                                                    </div>
+
+                                                    <div class="modal-body">
+
+                                                        <div class="row" style="padding-top: 8px">
+                                                            <div class="col-md-2">
+                                                                <label for="cus_id" style="color: grey">Your ID</label>
+                                                            </div>
+                                                            <div class="col-md-7">
+                                                                <input type="text" class="form-control" name="cus_id" value="<?php echo $rec->order_id; ?>" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </td>
+
+
+                                <br>
+                            </tr>
